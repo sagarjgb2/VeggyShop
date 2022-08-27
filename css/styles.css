@@ -1,0 +1,39 @@
+a{
+    color: white;
+}
+
+@media (max-width: 500px) {
+   #carouselExampleInterval p{
+        font-size: 0.9rem;
+    }
+}
+
+.card{
+    margin: 10px;
+    text-align: justify;
+}
+
+.container{
+    margin-top: 2% ;
+    text-align: justify;
+    margin-bottom:1%;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+#kg{
+    font-weight: normal;
+    font-size: 0.9em;
+    color: grey;
+}
+
+#price{
+    color: red; font-weight: normal; font-size: 0.8em;
+}
+
+#tempaltemo_footer{
+    margin-top:5%;
+}
+

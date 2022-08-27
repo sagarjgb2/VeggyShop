@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Announcement Bar</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Dynamic Announcement Bar -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div
+          class="carousel-item active"
+          data-bs-interval="3000"
+          style="background-color: #ffc107"
+        >
+          <p id="free-shipping" style="text-align: center">
+            <a href="#">Free shipping on 75$+</a>
+          </p>
+        </div>
+        <div
+          class="carousel-item"
+          data-bs-interval="1000"
+          style="background-color: #ffc107"
+        >
+          <p style="text-align: center">
+            <a href="#">Pay in 4 Interest-Free Payments</a>
+          </p>
+        </div>
+        <div class="carousel-item" style="background-color: #ffc107">
+          <p style="text-align: center"><a href="#">Hassle-Free Returns</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">GemSeason</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cart</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- some description -->
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam laborum
+        praesentium quasi quaerat eos, vero deserunt fuga non. Facilis impedit
+        architecto voluptatem commodi doloremque sint voluptatum sit aperiam
+        doloribus perspiciatis quia quaerat incidunt quae recusandae, maxime
+        beatae hic. Quibusdam eum vero nam distinctio beatae! Temporibus
+        repellat iure ut atque quam mollitia quia voluptatum optio accusantium
+        doloremque. Accusamus quas est iure.
+      </p>
+    </div>
+
+    <!-- Shop items -->
+
+    <div class="shop-items">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="/images/tomato.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Tomato <span id="price">$19</span><span id="kg">/kg</span>
+              </h5>
+              <p class="card-text">
+                <span style="color: green; font-weight: bold">Fresh</span> FREE
+                delivery as fast as 4 hours on orders above $75 of Fresh items
+              </p>
+              <a href="#" class="btn btn-warning" id="tomato">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="/images/onion.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Onion <span id="price">$30</span><span id="kg">/kg</span>
+              </h5>
+              <p class="card-text">
+                <span style="color: green; font-weight: bold">Fresh</span> FREE
+                delivery as fast as 4 hours on orders above $75 of Fresh items
+              </p>
+              <a href="#" class="btn btn-warning" id="onion">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="/images/brinjal.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Brinjal <span id="price">$20</span><span id="kg">/kg</span>
+              </h5>
+              <p class="card-text">
+                <span style="color: green; font-weight: bold">Fresh</span> FREE
+                delivery as fast as 4 hours on orders above $75 of Fresh items
+              </p>
+              <a href="#" class="btn btn-warning" id="brinjal">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="/images/potato.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Potato <span id="price">$12</span><span id="kg">/kg</span>
+              </h5>
+              <p class="card-text">
+                <span style="color: green; font-weight: bold">Fresh</span> FREE
+                delivery as fast as 4 hours on orders above $75 of Fresh items
+              </p>
+              <a href="#" class="btn btn-warning" id="potato">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- next row in large screen -->
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="/images/carrot.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Carrot <span id="price">$30</span><span id="kg">/kg</span>
+              </h5>
+              <p class="card-text">
+                <span style="color: green; font-weight: bold">Fresh</span>
+                FREE delivery as fast as 4 hours on orders above $75 of Fresh
+                items
+              </p>
+              <a href="#" class="btn btn-warning" id="carrot">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="/images/okra.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Okra <span id="price">$19</span><span id="kg">/kg</span>
+              </h5>
+              <p class="card-text">
+                <span style="color: green; font-weight: bold">Fresh</span>
+                FREE delivery as fast as 4 hours on orders above $75 of Fresh
+                items
+              </p>
+              <a href="#" class="btn btn-warning" id="okra">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="/images/green_beans.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Green Beans <span id="price">$12</span><span id="kg">/kg</span>
+              </h5>
+              <p class="card-text">
+                <span style="color: green; font-weight: bold">Fresh</span>
+                FREE delivery as fast as 4 hours on orders above $75 of Fresh
+                items
+              </p>
+              <a href="#" class="btn btn-warning" id="beans">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="/images/beetroot.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Beetroot <span id="price">$20</span><span id="kg">/kg</span>
+              </h5>
+              <p class="card-text">
+                <span style="color: green; font-weight: bold">Fresh</span>
+                FREE delivery as fast as 4 hours on orders above $75 of Fresh
+                items
+              </p>
+              <a href="#" class="btn btn-warning" id="beetroot">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- next row of shop items-->
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="/images/pumpkin.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Pumpkin <span id="price">$19</span><span id="kg">/kg</span>
+              </h5>
+              <p class="card-text">
+                <span style="color: green; font-weight: bold">Fresh</span> FREE
+                delivery as fast as 4 hours on orders above $75 of Fresh items
+              </p>
+              <a href="#" class="btn btn-warning" id="pumpkin">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="/images/snake_gourd.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Snake Gourd <span id="price">$30</span><span id="kg">/kg</span>
+              </h5>
+              <p class="card-text">
+                <span style="color: green; font-weight: bold">Fresh</span> FREE
+                delivery as fast as 4 hours on orders above $75 of Fresh items
+              </p>
+              <a href="#" class="btn btn-warning" id="snake_gourd"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="/images/lemon.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Lemon <span id="price">$20</span><span id="kg">/kg</span>
+              </h5>
+              <p class="card-text">
+                <span style="color: green; font-weight: bold">Fresh</span> FREE
+                delivery as fast as 4 hours on orders above $75 of Fresh items
+              </p>
+              <a href="#" class="btn btn-warning" id="lemon">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="/images/Muskmelon.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Muskmelon <span id="price">$12</span><span id="kg">/kg</span>
+              </h5>
+              <p class="card-text">
+                <span style="color: green; font-weight: bold">Fresh</span> FREE
+                delivery as fast as 4 hours on orders above $75 of Fresh items
+              </p>
+              <a href="#" class="btn btn-warning" id="muskmelon">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 pt-5">
+            <h2 class="h2 text-light border-bottom pb-3 border-light logo">
+              GemSeason
+            </h2>
+            <ul class="list-unstyled text-light footer-link-list">
+              <li>
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+                location, location
+              </li>
+              <li>
+                <i class="fa fa-phone fa-fw"></i>
+                <a class="text-decoration-none" href="tel:+562546258"
+                  >562266468</a
+                >
+              </li>
+              <li>
+                <i class="fa fa-envelope fa-fw"></i>
+                <a
+                  class="text-decoration-none"
+                  href="mailto:infosomething@domain.com"
+                  >infosomething@domain.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 pt-5">
+            <h2 class="h2 text-light border-bottom pb-3 border-light">
+              Further Info
+            </h2>
+            <ul class="list-unstyled text-light footer-link-list">
+              <li><a class="text-decoration-none" href="#">Home</a></li>
+              <li>
+                <a class="text-decoration-none" href="#">Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row text-light mb-4">
+          <div class="col-12 mb-3">
+            <div class="w-100 my-3 border-top border-light"></div>
+          </div>
+          <div class="col-auto">
+            <label class="sr-only" for="subscribeEmail">Email address</label>
+            <div class="input-group mb-2">
+              <input
+                type="text"
+                class="form-control bg-dark border-light"
+                id="subscribeEmail"
+                placeholder="Email address"
+              />
+              <div class="input-group-text btn-primary text-dark">
+                Subscribe
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100 bg-black py-3">
+        <div class="container">
+          <div class="row pt-2">
+            <div class="col-12">
+              <p class="text-left text-light">
+                Copyright &copy; 2022 GemSeason
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- script -->
+    <script src="cart.js"></script>
+  </body>
+</html>
